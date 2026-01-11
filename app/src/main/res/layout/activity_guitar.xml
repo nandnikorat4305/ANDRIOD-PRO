@@ -13,5 +13,12 @@
         android:src="@drawable/guitar_body"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp">
 
 </FrameLayout>

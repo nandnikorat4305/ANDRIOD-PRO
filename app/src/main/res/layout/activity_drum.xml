@@ -9,4 +9,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#121212"/>
+    <!-- 🥁 Drum kit background (same image, better presentation) -->
+    <ImageView
+        android:id="@+id/drumBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/drum"
+        android:elevation="6dp"/>
 </FrameLayout>

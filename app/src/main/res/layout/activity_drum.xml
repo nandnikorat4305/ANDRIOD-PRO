@@ -19,4 +19,12 @@
         android:layout_marginBottom="32dp"
         android:src="@drawable/drum"
         android:elevation="6dp"/>
+    <!-- 🔸 Snare (UNCHANGED) -->
+    <View
+        android:id="@+id/snare"
+        android:layout_width="193dp"
+        android:layout_height="120dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="200dp"
+        android:background="@android:color/transparent" />
 </FrameLayout>

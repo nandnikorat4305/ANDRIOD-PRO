@@ -41,6 +41,13 @@
         android:layout_weight="1"
         android:src="@drawable/string"
         android:alpha="0.6"/>
+    <ImageView
+        android:id="@+id/string4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/string"
+        android:alpha="0.6"/>
 
 
 </FrameLayout>

@@ -13,6 +13,8 @@
         android:src="@drawable/guitar_body"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"/>
+
+    <!-- Strings overlay -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -20,41 +22,47 @@
         android:weightSum="6"
         android:paddingStart="36dp"
         android:paddingEnd="36dp">
-    <ImageView
-        android:id="@+id/string1"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:src="@drawable/string"
-        android:alpha="0.6"/>
-    <ImageView
-        android:id="@+id/string2"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:src="@drawable/string"
-        android:alpha="0.6"/>
-    <ImageView
-        android:id="@+id/string3"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:src="@drawable/string"
-        android:alpha="0.6"/>
-    <ImageView
-        android:id="@+id/string4"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:src="@drawable/string"
-        android:alpha="0.6"/>
-    <ImageView
-        android:id="@+id/string5"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:src="@drawable/string"
-        android:alpha="0.6"/>
+
+        <ImageView
+            android:id="@+id/string1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/string"
+            android:alpha="0.6"/>
+
+        <ImageView
+            android:id="@+id/string2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/string"
+            android:alpha="0.6"/>
+
+        <ImageView
+            android:id="@+id/string3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/string"
+            android:alpha="0.6"/>
+
+        <ImageView
+            android:id="@+id/string4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/string"
+            android:alpha="0.6"/>
+
+        <ImageView
+            android:id="@+id/string5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/string"
+            android:alpha="0.6"/>
+
         <ImageView
             android:id="@+id/string6"
             android:layout_width="0dp"
@@ -65,5 +73,14 @@
 
     </LinearLayout>
 
+    <!-- Minimal top label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guitar"
+        android:textColor="#DDFFFFFF"
+        android:textSize="16sp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="16dp"/>
 
 </FrameLayout>

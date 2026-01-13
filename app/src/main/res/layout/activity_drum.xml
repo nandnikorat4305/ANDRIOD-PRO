@@ -84,4 +84,13 @@
             android:textSize="18sp"
             android:textStyle="bold"/>
     </LinearLayout>
+    <!-- 🎚 Bottom UX hint -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap drums to play beats"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="24dp"/>
 </FrameLayout>

@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#121212"/>
+
     <!-- 🥁 Drum kit background (same image, better presentation) -->
     <ImageView
         android:id="@+id/drumBody"
@@ -19,6 +20,7 @@
         android:layout_marginBottom="32dp"
         android:src="@drawable/drum"
         android:elevation="6dp"/>
+
     <!-- 🔸 Snare (UNCHANGED) -->
     <View
         android:id="@+id/snare"
@@ -27,6 +29,8 @@
         android:layout_gravity="right"
         android:layout_marginTop="200dp"
         android:background="@android:color/transparent" />
+
+    <!-- 🔸 Kick (UNCHANGED) -->
     <View
         android:id="@+id/kick"
         android:layout_width="125dp"
@@ -34,6 +38,8 @@
         android:layout_gravity="bottom|right"
         android:layout_marginBottom="270dp"
         android:background="@android:color/transparent" />
+
+    <!-- 🔸 Kick 2 (UNCHANGED) -->
     <View
         android:id="@+id/kick2"
         android:layout_width="120dp"
@@ -42,6 +48,8 @@
         android:layout_marginStart="50dp"
         android:layout_marginBottom="270dp"
         android:background="@android:color/transparent" />
+
+    <!-- 🔸 Hi-hat (UNCHANGED) -->
     <View
         android:id="@+id/hihat"
         android:layout_width="120dp"
@@ -50,6 +58,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="120dp"
         android:background="@android:color/transparent" />
+
     <!-- 🔸 Crash (UNCHANGED) -->
     <View
         android:id="@+id/crash"
@@ -59,6 +68,7 @@
         android:layout_marginTop="120dp"
         android:layout_marginEnd="40dp"
         android:background="@android:color/transparent" />
+
     <!-- 🔸 Tom (UNCHANGED) -->
     <View
         android:id="@+id/tom"
@@ -66,6 +76,7 @@
         android:layout_height="120dp"
         android:layout_marginTop="200dp"
         android:background="@android:color/transparent" />
+
     <!-- 🎛 Top studio bar -->
     <LinearLayout
         android:layout_width="match_parent"
@@ -76,6 +87,7 @@
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         android:elevation="8dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -84,6 +96,7 @@
             android:textSize="18sp"
             android:textStyle="bold"/>
     </LinearLayout>
+
     <!-- 🎚 Bottom UX hint -->
     <TextView
         android:layout_width="wrap_content"
@@ -93,4 +106,10 @@
         android:textSize="14sp"
         android:layout_gravity="bottom|center_horizontal"
         android:layout_marginBottom="24dp"/>
+
+    <!-- 🌑 Subtle vignette (designer touch) -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#22000000"/>
 </FrameLayout>

@@ -66,4 +66,14 @@
         android:layout_height="120dp"
         android:layout_marginTop="200dp"
         android:background="@android:color/transparent" />
+    <!-- 🎛 Top studio bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="top"
+        android:background="#181818"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:elevation="8dp">
 </FrameLayout>

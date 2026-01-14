@@ -1,4 +1,4 @@
-package com.example.musicapp;
+package com.example.instrumentalapp;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -34,6 +34,7 @@ public class DrumActivity extends AppCompatActivity {
                 return playSound(R.raw.kick, event);
             }
         });
+
         kick2.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -55,3 +56,20 @@ public class DrumActivity extends AppCompatActivity {
             }
         });
 
+        tom.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return playSound(R.raw.tom, event);
+            }
+        });
+    }
+
+    private boolean playSound(int soundRes, MotionEvent event) {
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
+            MediaPlayer mp = MediaPlayer.create(this, soundRes);
+            mp.setOnCompletionListener(MediaPlayer::release);
+            mp.start();
+        }
+        return true;
+    }
+}

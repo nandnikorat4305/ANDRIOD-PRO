@@ -21,4 +21,10 @@ public class DrumActivity extends AppCompatActivity {
         View crash  = findViewById(R.id.crash);
         View tom    = findViewById(R.id.tom);
 
-
+        s1.setOnTouchListener((v, e) -> play(R.raw.string1, e));
+        s2.setOnTouchListener((v, e) -> play(R.raw.string2, e));
+        s3.setOnTouchListener((v, e) -> play(R.raw.string3, e));
+        s4.setOnTouchListener((v, e) -> play(R.raw.string4, e));
+        s5.setOnTouchListener((v, e) -> play(R.raw.string5, e));
+        s6.setOnTouchListener((v, e) -> play(R.raw.string6, e));
+    }

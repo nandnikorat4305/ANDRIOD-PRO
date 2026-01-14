@@ -1,4 +1,4 @@
-package com.example.instrumentalapp;
+package com.example.musicapp;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -21,10 +21,37 @@ public class DrumActivity extends AppCompatActivity {
         View crash  = findViewById(R.id.crash);
         View tom    = findViewById(R.id.tom);
 
-        s1.setOnTouchListener((v, e) -> play(R.raw.string1, e));
-        s2.setOnTouchListener((v, e) -> play(R.raw.string2, e));
-        s3.setOnTouchListener((v, e) -> play(R.raw.string3, e));
-        s4.setOnTouchListener((v, e) -> play(R.raw.string4, e));
-        s5.setOnTouchListener((v, e) -> play(R.raw.string5, e));
-        s6.setOnTouchListener((v, e) -> play(R.raw.string6, e));
-    }
+        snare.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return playSound(R.raw.snare, event);
+            }
+        });
+
+        kick.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return playSound(R.raw.kick, event);
+            }
+        });
+        kick2.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return playSound(R.raw.kick2, event);
+            }
+        });
+
+        hihat.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return playSound(R.raw.hihat, event);
+            }
+        });
+
+        crash.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return playSound(R.raw.crash, event);
+            }
+        });
+

@@ -45,7 +45,7 @@ public class DrumActivity extends AppCompatActivity {
         hihat.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                return playSound(R.raw.hihat, event);
+                return playSound(R.raw.hithat, event);
             }
         });
 
